@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // ===== IMPORTANT: CHANGE THIS TO YOUR ACTUAL PAGE 2 FILENAME =====
         setTimeout(() => {
-            window.location.href = 'page2.html'; // CHANGE THIS
+            window.location.href = 'cake.html'; // CHANGE THIS
         }, 400);
     });
     
