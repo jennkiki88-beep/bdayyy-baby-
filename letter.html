@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Letter For My Favourite Sweetest Nimbu 💌</title>
+    <link rel="stylesheet" href="letter-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Courier+Prime&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background pixel decor -->
+    <div class="stationery-bg">
+        <!-- Pixel corners -->
+        <div class="corner corner-tl"></div>
+        <div class="corner corner-tr"></div>
+        <div class="corner corner-bl"></div>
+        <div class="corner corner-br"></div>
+        
+        <!-- Pixel hearts floating -->
+        <div class="floating-heart" style="top:10%; left:5%;"></div>
+        <div class="floating-heart" style="top:15%; right:8%;"></div>
+        <div class="floating-heart" style="bottom:20%; left:10%;"></div>
+        <div class="floating-heart" style="bottom:15%; right:12%;"></div>
+        
+        <!-- Paper texture overlay -->
+        <div class="paper-texture"></div>
+    </div>
+
+    <div class="container">
+        <!-- Envelope at top -->
+        <div class="pixel-envelope" id="envelope">
+            <div class="envelope-flap"></div>
+            <div class="envelope-body"></div>
+            <div class="envelope-text">For You</div>
+        </div>
+
+        <!-- Click instruction -->
+        <p class="open-instruction" id="instruction">
+            <!-- YOUR INSTRUCTION TEXT HERE -->
+            Click the envelope to open !
+        </p>
+
+        <!-- The Letter (hidden initially) -->
+        <div class="letter-container" id="letterContainer">
+            <!-- Stationery paper -->
+            <div class="stationery-paper">
+                <!-- Paper lines -->
+                <div class="paper-lines"></div>
+                
+                <!-- Letter content -->
+                <div class="letter-content">
+                    <!-- Date -->
+                    <div class="letter-date">
+                        <!-- YOUR DATE HERE -->
+                        25th February 2024
+                    </div>
+                    
+                    <!-- Greeting -->
+                    <div class="letter-greeting">
+                        <!-- YOUR GREETING HERE -->
+                        Dear Nimbu,
+                    </div>
+                    
+                    <!-- Main letter body -->
+                    <div class="letter-body">
+                        <!-- 
+                        YOUR LETTER CONTENT HERE
+                        Write your heartfelt message here
+                        You can use multiple <p> tags for paragraphs
+                        -->
+                        <p>Happiest Birthday Baby!.</p>
+                        <p>It feels so so weird to sit here at 3am and write a letter to a girl i have never met, neve seen, and honestly? thats insane. i cannot explain why i feel this connection to you, like absolutely inexplicable. And yet here i sit, like a fucking yearning poet in 1800's writing to his wife from a battleground 😭. </p>
+                        <p>I wont lengthen it too much, but I just wanted to tell you. Youre the closest to my heart, and no matter what, if you ever feel like you wanna reach out to me? I'm, well, a few miles away, but i will always text you. Youre like a sister to me, and i truly desrly wish you the happiest birthday and hope you enjoy all things way bette than i once did, my sweetest baby.</p>
+                    </div>
+                    
+                    <!-- Closing -->
+                    <div class="letter-closing">
+                        <!-- YOUR CLOSING HERE -->
+                        Love you so so so much, 
+                    </div>
+                </div>
+                
+                <!-- Wax seal -->
+                <div class="wax-seal">
+                    <div class="seal-circle"></div>
+                    <div class="seal-heart">♥</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Next page button (hidden until letter read) -->
+        <button class="pixel-continue-btn" id="continueBtn" style="display: none;">
+            <!-- YOUR BUTTON TEXT HERE -->
+            Stars? 🌟
+        </button>
+    </div>
+
+    <!-- Sound effects -->
+    <audio id="envelopeSound" preload="auto">
+        <source src="envelope-open.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="pageSound" preload="auto">
+        <source src="page-turn.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="letter-script.js"></script>
+</body>
+</html>
