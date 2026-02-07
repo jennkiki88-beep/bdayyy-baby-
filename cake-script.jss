@@ -9,40 +9,40 @@ document.addEventListener('DOMContentLoaded', function() {
         // ===== YOUR 15 MESSAGES HERE =====
         balloonMessages: [
             // Balloon 1
-            "YOUR MESSAGE FOR BALLOON 1 HERE",
+            "You have the best sense of humour.",
             // Balloon 2
-            "YOUR MESSAGE FOR BALLOON 2 HERE",
+            "You are th kindest person i know.",
             // Balloon 3
-            "YOUR MESSAGE FOR BALLOON 3 HERE",
+            "I hope you never get child married because i want to marry you.",
             // Balloon 4
-            "YOUR MESSAGE FOR BALLOON 4 HERE",
+            "You are the prettiest girl in my life.",
             // Balloon 5
-            "YOUR MESSAGE FOR BALLOON 5 HERE",
+            "I hope you know whenever anyhting happens, i wonder how id be so happy to tell you",
             // Balloon 6
-            "YOUR MESSAGE FOR BALLOON 6 HERE",
+            "Never have i ever had a friend as best as you.",
             // Balloon 7
-            "YOUR MESSAGE FOR BALLOON 7 HERE",
+            "I cannot explain the amoutn of love i have for you.",
             // Balloon 8
-            "YOUR MESSAGE FOR BALLOON 8 HERE",
+            "Youve never made me feel alone or hurt or sad.",
             // Balloon 9
-            "YOUR MESSAGE FOR BALLOON 9 HERE",
+            "When you text me, i jsut wanna kiss you and hug you.",
             // Balloon 10
-            "YOUR MESSAGE FOR BALLOON 10 HERE",
+            "Youre the most kissable person ever and no man deserves you.",
             // Balloon 11
-            "YOUR MESSAGE FOR BALLOON 11 HERE",
+            "i hope you never ever have to deal with a m*nchild",
             // Balloon 12
-            "YOUR MESSAGE FOR BALLOON 12 HERE",
+            "We can be 75 and still listen to olivia at the nursing home and cuss out m*n",
             // Balloon 13
-            "YOUR MESSAGE FOR BALLOON 13 HERE",
+            "Stop saying you dont like your nose, all your features look straight out of apsara. ",
             // Balloon 14
-            "YOUR MESSAGE FOR BALLOON 14 HERE",
+            "I wish we lived closer, i wish we were even a little bit close to each other.",
             // Balloon 15
-            "YOUR MESSAGE FOR BALLOON 15 HERE"
+            "I will always love you, cherish you, and supprt you (even if you kill a m*n)."
         ],
         // ===== YOUR FINAL MESSAGE =====
-        finalMessage: "YOUR FINAL CELEBRATION MESSAGE HERE (appears after all balloons popped)",
+        finalMessage: "Happiest Birthday to my favourite autistic lesbian, who is also my dyslexic randi naukrani, and my most most favourite baby, i love you so so so much.",
         // ===== REDIRECT TO NEXT PAGE =====
-        nextPage: "songs.html" // CHANGE THIS to your Page 3 filename
+        nextPage: "letter.html" // CHANGE THIS to your Page 3 filename
     };
     
     // ===== CREATE BACKGROUND CONFETTI =====
