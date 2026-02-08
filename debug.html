@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head><title>DEBUG</title></head>
+<body>
+    <h1 style="color:red;">TEST 1: Can you see red text?</h1>
+    
+    <div id="balloon" 
+         style="width:100px; height:150px; background:blue; border-radius:50px;">
+    </div>
+    
+    <script>
+        alert("TEST 2: JavaScript works!");
+        console.log("DEBUG: Script running");
+        
+        // Create a balloon with JavaScript
+        const newBalloon = document.createElement('div');
+        newBalloon.style.cssText = `
+            width: 80px;
+            height: 120px;
+            background: pink;
+            border-radius: 40px;
+            margin: 20px;
+        `;
+        document.body.appendChild(newBalloon);
+        
+        document.write("<p style='color:green;'>TEST 3: JavaScript wrote this!</p>");
+    </script>
+</body>
+</html>
