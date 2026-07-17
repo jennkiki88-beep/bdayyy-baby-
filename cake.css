@@ -1,0 +1,483 @@
+/* ===== RESET ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:linear-gradient(180deg,#1f1147,#3d2175,#6a46a3);
+    overflow:hidden;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-family:'VT323',monospace;
+}
+
+/* ===== MAIN ===== */
+
+.container{
+
+    text-align:center;
+    position:relative;
+    z-index:10;
+
+}
+
+.title{
+
+    font-family:'Press Start 2P',cursive;
+    color:white;
+
+    font-size:2.2rem;
+
+    text-shadow:
+    4px 4px #ff69b4;
+
+    margin-bottom:20px;
+
+}
+
+.subtitle{
+
+    color:#ffeeba;
+
+    font-size:2rem;
+
+    margin-bottom:40px;
+
+}
+
+/* ===== CAKE ===== */
+
+.cake-wrapper{
+
+    position:relative;
+
+    width:420px;
+
+    height:340px;
+
+    margin:auto;
+
+}
+
+/* Number */
+
+.number{
+
+    position:absolute;
+
+    top:10px;
+
+    width:100%;
+
+    text-align:center;
+
+    font-family:'Press Start 2P';
+
+    color:white;
+
+    font-size:2.6rem;
+
+    z-index:15;
+
+}
+
+/* Candles */
+
+.candles{
+
+    position:absolute;
+
+    top:55px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    gap:40px;
+
+    z-index:20;
+
+}
+
+.candle{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.stick{
+
+    width:10px;
+
+    height:45px;
+
+    background:white;
+
+    border:2px solid #ddd;
+
+}
+
+.flame{
+
+    width:16px;
+
+    height:22px;
+
+    background:gold;
+
+    border-radius:50% 50% 50% 50%;
+
+    margin-bottom:3px;
+
+    animation:flicker .3s infinite alternate;
+
+    box-shadow:
+
+    0 0 12px yellow,
+
+    0 0 30px orange;
+
+}
+
+@keyframes flicker{
+
+    from{
+
+        transform:scale(1);
+
+    }
+
+    to{
+
+        transform:scale(.8);
+
+    }
+
+}
+
+/* Cake */
+
+.cake{
+
+    position:absolute;
+
+    bottom:0;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:340px;
+
+    height:180px;
+
+}
+
+/* icing */
+
+.icing{
+
+    width:340px;
+
+    height:45px;
+
+    background:white;
+
+    border-radius:20px;
+
+    position:absolute;
+
+    top:0;
+
+    z-index:5;
+
+}
+
+/* cake body */
+
+.layer{
+
+    width:340px;
+
+    height:140px;
+
+    background:#f4bfd8;
+
+    position:absolute;
+
+    bottom:0;
+
+    border-radius:0 0 20px 20px;
+
+    border:6px solid #ffffff55;
+
+}
+
+/* ===== COUNTDOWN ===== */
+
+.countdown{
+
+    font-family:'Press Start 2P';
+
+    color:white;
+
+    font-size:2rem;
+
+    margin-top:45px;
+
+    min-height:40px;
+
+}
+
+/* ===== BUTTON ===== */
+
+.pixelButton{
+
+    margin-top:35px;
+
+    padding:18px 35px;
+
+    font-family:'Press Start 2P';
+
+    background:#ff69b4;
+
+    color:white;
+
+    border:none;
+
+    cursor:pointer;
+
+    border-radius:10px;
+
+    font-size:1rem;
+
+    transition:.2s;
+
+}
+
+.pixelButton:hover{
+
+    transform:scale(1.05);
+
+}
+/* ===== HAPPY BIRTHDAY MESSAGE ===== */
+
+.birthdayMessage{
+
+    display:none;
+
+    margin-top:45px;
+
+    font-family:'Press Start 2P';
+
+    font-size:2rem;
+
+    color:#FFD700;
+
+    text-shadow:
+        3px 3px #ff69b4;
+
+    animation:bounce 1s infinite;
+
+}
+
+@keyframes bounce{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+}
+
+/* ===== CONTINUE BUTTON ===== */
+
+.continueButton{
+
+    display:none;
+
+    margin-top:30px;
+
+    padding:18px 35px;
+
+    font-family:'Press Start 2P';
+
+    font-size:1rem;
+
+    background:#4CAF50;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.continueButton:hover{
+
+    transform:scale(1.05);
+
+    background:#58c65d;
+
+}
+
+/* ===== CONFETTI ===== */
+
+#confettiContainer{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+}
+
+.confetti{
+
+    position:absolute;
+
+    width:12px;
+
+    height:12px;
+
+    animation:fall 3.5s linear forwards;
+
+}
+
+@keyframes fall{
+
+    0%{
+
+        transform:
+            translateY(-50px)
+            rotate(0deg);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ===== FLAMES OUT ===== */
+
+.flame.out{
+
+    opacity:0;
+
+    transform:scale(0);
+
+    transition:.4s;
+
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:700px){
+
+    .cake-wrapper{
+
+        width:320px;
+
+        height:280px;
+
+    }
+
+    .cake{
+
+        width:260px;
+
+        height:150px;
+
+    }
+
+    .icing{
+
+        width:260px;
+
+    }
+
+    .layer{
+
+        width:260px;
+
+    }
+
+    .candles{
+
+        gap:28px;
+
+        top:50px;
+
+    }
+
+    .title{
+
+        font-size:1.5rem;
+
+    }
+
+    .subtitle{
+
+        font-size:1.5rem;
+
+    }
+
+    .countdown{
+
+        font-size:1.4rem;
+
+    }
+
+    .birthdayMessage{
+
+        font-size:1.3rem;
+
+        line-height:2rem;
+
+    }
+
+    .pixelButton,
+    .continueButton{
+
+        font-size:.8rem;
+
+        padding:15px 24px;
+
+    }
+
+}
