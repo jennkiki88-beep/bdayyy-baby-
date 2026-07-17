@@ -2,15 +2,11 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     console.log("💌 Letter page loaded!");
-    
-    // ===== CONFIGURATION =====
+
+
     const CONFIG = {
-        // ===== YOUR LETTER CONTENT =====
-        // (You can also edit this directly in the HTML)
-        
-        // ===== REDIRECT TO NEXT PAGE =====
-        nextPage: "songs.html" // CHANGE THIS to your Page 4 (songs) filename
-    };
+    nextPage: "moon.html"
+};
     
     // ===== ELEMENTS =====
     const envelope = document.getElementById('envelope');
